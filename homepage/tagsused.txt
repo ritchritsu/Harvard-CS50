@@ -1,0 +1,21 @@
+HTML Tags Used:
+1. <html>: Defines the root of an HTML document.
+2. <head>: Contains metadata about the HTML document.
+3. <title>: Defines the title of the HTML document.
+4. <meta>: Specifies metadata within an HTML document, such as viewport settings.
+5. <link>: Links external resources like stylesheets.
+6. <body>: Contains the content of the HTML document.
+7. <div>: Defines a division or section in an HTML document.
+8. <a>: Defines a hyperlink.
+9. <button>: Defines a clickable button.
+10. <img>: Defines an image.
+
+CSS Properties Used:
+1. width: Sets the width of an element.
+2. height: Sets the height of an element.
+3. background-image: Sets one or more background images for an element.
+4. background-size: Sets the size of the background image.
+5. background-position: Sets the starting position of a background image.
+
+JavaScript and Bootstrap Usage:
+JavaScript was used to implement a simple image slider functionality, allowing users to navigate through a series of images by clicking on left and right arrow buttons. Bootstrap was used to make the webpage responsive by utilizing the container-fluid class and grid system for layout structuring, ensuring compatibility with various screen sizes.

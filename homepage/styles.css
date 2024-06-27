@@ -1,0 +1,202 @@
+@import url('https://fonts.cdnfonts.com/css/optimus-princeps');
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Tarnished2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    top: -30px;
+
+}
+
+.navbar .logo {
+    width: 150px;
+    margin: 30px 0;
+    filter: drop-shadow(-10px 10px 10px black);
+    transform: translateX(-30%);
+
+}
+
+.info .consoles {
+    width: 300px;
+    cursor: pointer;
+    right: 0px;
+    top: 120px;
+    /* Adjust this value to lower or raise the consoles */
+    position: relative;
+    filter: drop-shadow(-10px 10px 10px black);
+}
+
+.info .awards {
+    width: 200px;
+    right: 0px;
+    top: -150px;
+    /* Adjust this value to lower or raise the consoles */
+    position: relative;
+    filter: drop-shadow(-10px 10px 10px black);
+}
+
+.info .bandaiLogo {
+    width: 70px;
+    right: -350px;
+    cursor: pointer;
+    filter: drop-shadow(-10px 10px 10px black);
+    top: 20px;
+    /* Adjust this value to lower or raise the Bandai logo */
+    position: relative;
+}
+
+
+
+.navbar .explore {
+    display: flex;
+    align-items: center;
+    right: 100px;
+    transform: translateX(200%);
+}
+
+.navbar button:hover {
+    color: #F5EB9A;
+}
+
+
+.navbar .dlc {
+    display: flex;
+    align-items: center;
+    right: 100px;
+    transform: translateX(70%);
+}
+
+.navbar .wiki {
+    display: flex;
+    align-items: center;
+    right: 100px;
+    transform: translateX(250%);
+}
+
+.navbar .merch {
+    display: flex;
+    align-items: center;
+    right: 100px;
+    transform: translateX(50%);
+}
+
+
+
+button {
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'OptimusPrinceps';
+    filter: drop-shadow(-10px 10px 10px black);
+}
+
+.container {
+    width: 35%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.info {
+    width: 550px;
+    color: #fff;
+    position: relative;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: drop-shadow(10px 10px 10px black);
+    margin-top: 150px;
+
+}
+
+.info h1 {
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-family: 'OptimusPrinceps', sans-serif;
+    margin-top: -50px;
+}
+
+.info p {
+    font-size: 15px;
+    color: #f0eef1;
+    margin: 20px 0;
+    line-height: 18px;
+    font-family: 'sans-serif';
+}
+
+.info img {
+    margin: 20px 0;
+    width: 300px;
+    opacity: 0.7;
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+}
+
+
+
+#prev,
+#next {
+    width: 40px;
+    cursor: pointer;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    margin: 0 160px;
+}
+
+.preview img {
+    width: 60px;
+    margin: 0 10px;
+    opacity: 0.6;
+
+}
+
+.preview .active {
+    display: block;
+    border: 3px solid #fff;
+    width: 100px;
+    opacity: 1;
+}
+
+#hero {
+    transition: background-image 0.5s ease;
+}

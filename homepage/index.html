@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My First Webpage AAAAAAA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/optimus-princeps" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="hero" class="container-fluid">
+        <div class="navbar">
+            <img src="images/Elden Logo.png" class="logo">
+            <div class="explore">
+                <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring"><button type="button">official website</button></a>
+            </div>
+            <div class="wiki">
+                <a href="https://en.bandainamcoent.eu/elden-ring-wiki"><button type="button">wiki</button></a>
+            </div>
+            <div class="dlc">
+                <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring/shadow-of-the-erdtree"><button type="button">Shadow of the Erdtree</button></a>
+            </div>
+            <div class="merch">
+                <a href="https://bnent.eu/OfficialMerchER"><button type="button">Official Merch</button></a>
+            </div>
+            <div class="music">
+                <a href="https://bandainamco.lnk.to/Elden_Ring_ST"><button type="button">Music</button></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1>Explore the lands between!</h1>
+                <p>Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</p>
+                <p>In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered.</p>
+                <p>Marika's offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will.</p>
+                <p>And now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between. Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the Elden Ring.</p>
+                <p>And become the Elden Lord.</p>
+                <img src="images/Consoles.png" class="consoles">
+                <img src="images/Bandai.png" class="bandaiLogo">
+                <img src="images/EldenAwardz.png" class="awards">
+            </div>
+        </div>
+        <div class="slider">
+            <img src="images/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="images/TarnishedSmall.jpg" class="active thumbnail">
+                <img src="images/SiofraSmall.png" class="thumbnail">
+                <img src="images/RanniSmall.jpeg" class="thumbnail">
+                <img src="images/NightSkySmall.jpg" class="thumbnail">
+                <img src="images/MiquellaSmall.png" class="thumbnail">
+                <img src="images/LimgraveSmall.jpg" class="thumbnail">
+            </div>
+            <img src="images/right-arrow.png" id="next">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("hero");
+
+        var backgroundImg = new Array(
+            "images/Tarnished2.jpg",
+            "images/Siofra.png",
+            "images/Ranni.jpeg",
+            "images/Night Sky.jpg",
+            "images/Miquella.png",
+            "images/Limgrave.jpg",
+        );
+
+        let i = 0;
+        next.onclick = function() {
+            if (i < 5) {
+                hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+                thumbnail[i + 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+        }
+
+        prev.onclick = function() {
+            if (i > 0) {
+                hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+                thumbnail[i - 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }
+        }
+    </script>
+</body>
+
+</html>
